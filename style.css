@@ -14,95 +14,91 @@
 }
 
 body,
-html{
+html {
     background-color: rgb(92, 92, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-.back{
-    width: 13.5vw;
-    height: 56vh;
+
+.back {
+    width: 280px;
+    height: 550px;
     border-radius: 40px;
     background-color: black;
-    margin: 8rem auto;
-    justify-items: center;
-    align-content: center;
-    border: 2px solid rgb(164,183,199);
+    border: 2px solid rgb(164, 183, 199);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
 
-& .img1{
-        width: 13vw;
-        height:auto;
-        object-fit: cover;
-        padding: 0 0.5rem;
-}
-}
-
-
-.container{
-    margin-top:4rem;
-}
-.raw{
-
-    margin: 0.8rem 0;
-    
+    & .img1 {
+        width: 95%;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
 }
 
-.input{
-    width: 12vw;
-    height: 7vh;
-    font-size: 2rem;
+
+.container {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.raw {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.input {
+    width: 95%;
+    height: 70px;
+    font-size: 2.2rem;
     text-align: right;
-    /* background-color: black;
-    border: 1px solid black;
-    color: rgb(255, 255, 255); */
-    color: black;
-    justify-content: center;
+    border-radius: 12px;
+}
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.1s ease;
 }
 
-.btnc{
-    width: 110px;
-    height: 50px;
-    background-color: rgb(165, 165, 165);
-    color: black;
-    border-radius: 25px;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    margin: 0 0.2rem;
-    cursor: pointer;
-    
+.btnc {
+  width: 110px;
+  border-radius: 35px;
+  background: rgb(165, 165, 165);
+  color: black;
 }
 
-.btn0{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(165, 165, 165);
-    color: black;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    margin: 0 0.2rem;
-    cursor: pointer;
-}
-.btn1{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(50, 50, 50);
-    color: white;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    margin: 0 0.2rem;
-    cursor: pointer;
-    
+
+.btn0 {
+  background: rgb(165, 165, 165);
+  color: black;
 }
 
-.btny{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(255,159,17);
-    color: black;
-    border-radius: 50%;
-    font-size: 1.8rem;
+.btn1 {
+  background: rgb(50, 50, 50);
+  color: white;
+}
 
-    font-family: sans-serif;
-    margin: 0 0.2rem;
-    cursor: pointer;
+
+.btny {
+  background: rgb(255, 159, 17);
+  color: black;
+  font-size: 1.8rem;
+}
+
+button:active {
+  transform: scale(0.9);
+  filter: brightness(1.2);
 }
